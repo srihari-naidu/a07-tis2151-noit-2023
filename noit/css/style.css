@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* ==================== [ GLOBAL ] ==================== */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    color: #8686ff;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+a:hover {
+    font-weight: 500;
+    color: #e0e0e0;
+}
+
+p {
+    color: #e0e0e0
+}
+
+body {
+    background-color: #171717;
+    color: #e0e0e0;
+}
+
+small {
+    font-weight: normal;
+    font-size: small;
+}
+
+
+
+/* ==================== [ CARD ] ==================== */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.card {
+    background-color: #252525;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    border-radius: 20px;
+    box-shadow: 2px, 2px, 13px, -4px rgba(0, 0, 0, 0.21);
+    -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+}
+
+
+
+/* ==================== [ CARD HEADER ] ==================== */
+
+.card-header {
+    width: 450px;
+    margin: 70px 10px 0px;
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px 20px 0 0;
+    color: #ffffffbd;
+    background: linear-gradient(230deg, rgba(133,212,255,1) 0%, rgba(134,135,255,1) 76%);
+}
+
+.header-success,
+.header-green {
+    background: linear-gradient(90deg, rgba(29,253,124,1) 0%, rgba(69,176,252,1) 100%) !important;
+}
+
+.header-warning,
+.header-orange {
+    background: linear-gradient(90deg, rgba(252,92,70,1) 0%, rgba(251,195,63,1) 80%) !important;
+}
+
+.header-error,
+.header-red {
+    background: linear-gradient(90deg, rgba(252,69,69,1) 0%, rgba(253,107,29,1) 100%) !important;
+}
+
+
+
+/* ==================== [ CARD BODY ] ==================== */
+
+.card-body {
+    width: 450px;
+    margin: 0px 10px 100px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.field label {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.input input {
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border: 0;
+    border-radius: 5px;
+    outline:none;
+    color: #fff;
+    background-color: #3a3a3abc;
+}
+
+textarea {
+    width: 100%;
+    font-size: 16px;
+    padding: 8px 10px;
+    border: 0;
+    border-radius: 5px;
+    outline:none;
+    color: #fff;
+    background-color: #3a3a3abc;
+    resize: none;
+}
+
+.file input{
+    padding: 7px 10px;
+}
+
+.checkbox .option {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 10px;
+    margin-bottom: 5px;
+    border: 0;
+    border-radius: 5px;
+    outline:none;
+    color: #fff;
+    background-color: #3a3a3abc;
+}
+
+.checkbox input {
+    margin-right: 15px;
+}
+
+
+
+/* ==================== [ BUTTON ] ==================== */
+
+.links {
+    margin-top: 40px;
+}
+.button {
+    font-weight: 600;
+    font-size: 16px;
+    height: 40px;
+    padding: 0px 10px;
+    cursor: pointer;
+    transition: all .3s;
+    color: rgb(134, 134, 255);
+    background-color: #252525;
+    border: 2px solid rgb(134, 134, 255);
+    border-radius: 5px;
+}
+
+.button:hover {
+    color: #e0e0e0;
+    background-color: rgb(134, 134, 255);
+}
+
+.submit,
+.message,
+.more,
+.bottom {
+    width: 100%;
+}
+
+.message,
+.more {
+    border: none;
+    border-radius: 15px;
+}
+
+.action {
+    width: 150px;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.button-add {
+    border: none;
+    font-size: 25px;
+}
+
+.button-view {
+    border: none;
+    font-size: 20px;
+}
+
+.button-delete {
+    border: none;
+    font-size: 15px;
+}
+
+
+
+/* ==================== [ NAVBAR ] ==================== */
+
+.nav {
+    background: #252525;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0;
+    line-height: 70px;
+    z-index: 100;
+}
+
+.logo {
+    width: 25%;
+}
+
+.logo img {
+    float: left;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+}
+
+.mid-links {
+    text-align: center;
+}
+
+.mid-links a {
+    line-height: 10px;
+    color: #e0e0e0;
+    font-weight: 600;
+    padding: 0 30px;
+    text-decoration: none;
+    transition: all .3s;
+    text-align: center;
+}
+
+.mid-links a:hover {
+    color: #8686ff;
+    padding: 0px 40px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.right-links {
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.right-links a {
+    padding: 0 10px;
+}
+
+.right-links a .button {
+    width: 125px;
+}
+
+.profile-box {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.profile-dropdown {
+    display: flex;
+    width: 200px;
+    margin-left: auto;
+}
+
+.profile-dropdown .profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.dropdown {
+    height: auto;
+    width: 100%;
+    margin-top: 0;
+    padding: 10px 10px;
+    cursor: default;
+    transition: all .3s;
+    color: #e0e0e0;
+    background-color: #252525;
+    border: 0;
+    border-radius: 0px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-radius: 5px;
+}
+
+.dropdown:hover {
+    color: #e0e0e0;
+    background-color: rgb(255, 255, 255, 0.25);
+}
+
+.profile-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    background-color: #252525;
+    z-index: 1;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.profile-menu a {
+    padding: 0 16px;
+    text-align: left;
+    display: flex;
+    line-height: 50px;
+    border-radius: 5px;
+}
+
+.profile-menu a:hover {
+    background-color:#8686ff;
+    color: #e0e0e0;
+    font-weight: 800;
+}
+
+.profile-box:hover .profile-menu {
+    display: block;
+}
+
+.profile-box:hover .dropdown {
+    background-color: rgb(255, 255, 255, 0.25);
+}
+
+
+
+/* ==================== [ PROFILE ] ==================== */
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+
+
+/* ==================== [ CARD MAIN ] ==================== */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-main {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    overflow-wrap: break-word;
+}
+
+.card-main .short {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin-top: 10px;
+    margin-bottom: 300px;
+}
+
+.card-main .long {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 300px;
+}
+
+.short .card {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.short .two {
+    width: calc(100%/2 - 1.5%);
+}
+
+.short .two:not(:nth-child(2n)) {
+    margin-right: 2%;
+}
+
+.short .three {
+    width: calc(100%/3 - 1.5%);
+}
+
+.short .three:not(:nth-child(3n)) {
+    margin-right: 2%;
+}
+
+.short .four {
+    width: calc(100%/4 - 1.5%);
+}
+
+.short .four:not(:nth-child(4n)) {
+    margin-right: 2%;
+}
+
+.long .card {
+    margin-bottom: 20px;
+}
+
+
+
+/* ==================== [ FOOTER ] ==================== */
+
+.footer {
+    position: fixed;
+    background: #252525;
+    left: 0;
+    bottom: 0;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+/* ==================== [ TITILE ] ==================== */
+
+.title {
+    padding-top: 150px;
+    background: linear-gradient(90deg, rgba(134,135,255,1) 0%, rgba(133,212,255,1) 25%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ==================== [ COURSE CARD ] ==================== */
+
+.actions {
+    display: flex;
+    flex-direction: row;
+}
+
+.actions .link {
+    margin: 0 5px
+}
+
+.actions input {
+    margin: 0 5px;
+}
+
+.course {
+    gap: 20px;
+}
+
+.course .provider {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.course .provider .profile-pic {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.course .thumbnail {
+    aspect-ratio: 16/9;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.course-main {
+    gap: 30px;
+}
+
+.course-main .title {
+    padding: 0;
+}
+
+.course-main .provider {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.course-main .provider .profile-pic {
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.course-main .thumbnail {
+    aspect-ratio: 16/9;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* ==================== [ INSTRUCTOR CARD ] ==================== */
+
+.instructor {
+    gap: 20px;
+}
+
+.instructor .profile-pic {
+    aspect-ratio: 1;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+
+/* ==================== [ COMMENT CARD ] ==================== */
+
+.comment .student {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.comment .student img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* ==================== [ EXTRAS ] ==================== */
+
+.gap {
+    gap: 25px;
+}
+
+.no-gap {
+    margin-bottom: 0px !important;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+/* ==================== [ MEDIA QUERIES ] ==================== */
+
+@media only screen and (max-width:840px) {
+    .right-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+    
+    .right-links a button {
+        width: 100%;
+    }
+    
+    .card-main .short {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .short .three
+    {
+        width: 100%;
+    }
+    
+    .short .four
+    {
+        width: 100%;
+    }
+
+    .long .card {
+        margin-bottom: 20px;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+    .actions .link {
+        margin-bottom: 10px;
+    }
+}
