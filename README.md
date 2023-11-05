@@ -1,6 +1,6 @@
 # NOIT (Know-IT)
 
-This is a web application that predominantly an online corse management website.
+This is a web application that's predominantly an online corse management website.
 
 ## Getting Started
 
